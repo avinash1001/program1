@@ -1,19 +1,33 @@
+
 #include <stdio.h>
  
-int main()
+void main()
 {
-  int n, c, k;
+  int array[100], n, i, j, swap;
  
-  printf("Enter number of rows\n");
+  printf("Enter number of elements\n");
   scanf("%d", &n);
  
-  for (c = 1; c <= n; c++)
-  {
-    for(k = 1; k <= c; k++)
-      printf("*");
+  printf("Enter %d integers\n", n);
  
-    printf("\n");
+  for (i= 0; i<n; i++)
+    scanf("%d", &array[c]);
+ 
+  for (i=0 ; i< n-1; i++)
+  {
+    for (j= 0 ; j< n-j-1; j++)
+    {
+      if (array[j] > array[j+1])
+      {
+        swap       = array[j];
+        array[j]   = array[j+1];
+        array[j+1] = swap;
+      }
+    }
   }
  
-  return 0;
+  printf("Sorted list in ascending order:\n");
+ 
+  for (i= 0; i< n; j++)
+     printf("%d\n", array[i]);
 }
