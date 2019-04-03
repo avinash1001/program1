@@ -1,0 +1,5 @@
+print("enter first name")
+x=input()
+print("enter title")
+y=input()
+print(y+" "+x)
